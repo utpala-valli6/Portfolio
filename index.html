@@ -1,186 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            background-color: white;
-            position: sticky;
-            top: 0px;
-        }
-
-        .logo-parent {
-            width: 10%;
-        }
-
-        .navbar-links {
-            width: 70%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .navbar-links a {
-            color: black;
-            font-weight: bold;
-            font-family: sans-serif;
-            text-decoration: none;
-            font-size: 1.3rem;
-        }
-
-        .lets-talk {
-            background-color: cadetblue;
-            color: white;
-            padding: 10px;
-            width: 8%;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 25px;
-        }
-
-        .lets-talk:hover {
-            background-color: black;
-            color: white;
-            border: 1px solid black;
-        }
-
-        .web-developer-container {
-            font-family: sans-serif;
-            background-color: #00ffff22;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2% 5%;
-        }
-
-        .web-developer {
-            width: 40%;
-        }
-
-        .web-developer h1 {
-            font-size: 2.3rem;
-        }
-
-        .web-developer p {
-            text-align: justify;
-        }
-
-        .my-profile {
-            width: 40%;
-        }
-
-        .web-developer-links a {
-            background-color: cadetblue;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin: 0px 10px;
-        }
-
-        .web-developer-links a:hover {
-            background-color: black;
-            color: white;
-        }
-
-        .about-me-container {
-            background-color: white;
-        }
-
-        .about-me {
-            width: 45%;
-        }
-
-        .about-me h2 {
-            color: cadetblue;
-        }
-
-        .about-me p {
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-        .about-left{
-            position: relative;
-        }
-        .project-count{
-            position: absolute;
-            bottom: 0%;
-            right: 15%;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: white;
-        }
-        .project-count p{
-            color: cadetblue;
-        }
-        .about-my-profile{
-            width: 75%;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="" class="logo-parent">
-            <img src="https://i.pinimg.com/736x/ff/6a/1b/ff6a1b272094acf34b963e2e0a738ddb.jpg" width="50px" height="50px" alt="">
-        </a>
-        <div class="navbar-links">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Services</a>
-            <a href="">Skill</a>
-            <a href="">Work</a>
-            <a href="">Pricing</a>
-            <a href="">Testimonial</a>
+    <nav class="navbar navbar-expand-md bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://avatars.githubusercontent.com/u/111624137?s=280&v=4" width="60" height="60" alt=""/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="./register.html">Register</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-        <a href="" class="lets-talk">Lets Talk</a>
     </nav>
 
-    <div class="web-developer-container">
-        <div class="web-developer">
-            <h1>Hey! I am a web developer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, totam magnam est eligendi vitae illo ex,
-                commodi ad</p>
-            <div class="web-developer-links">
-                <a href="">LEARN MORE</a>
-                <a href="">HIRE ME</a>
-            </div>
-        </div>
-        <img class="my-profile"
-            src="https://live.designtocodes.com/OnePage/NextGenAppsPro/assets/images/Hero_right_img.png" alt="">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.britannica.com/72/170772-050-D52BF8C2/Avocado-fruits.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">AVOCADO</h5>
+        <p class="card-text">Creamy avocado, smooth and mild,
+        A buttery fruit that’s nature’s wild.</p>
+      </div>
     </div>
-
-    <div class="web-developer-container about-me-container">
-        <div class="about-left">
-            <img class="about-my-profile"
-                src="https://live.designtocodes.com/OnePage/NextGenAppsPro/assets/images/about_left_img.png" alt="">
-            <div class="project-count">
-                <h2>Web Designer</h2>
-                <p>180+ Project Complete</p>
-            </div>
-        </div>
-
-        <div class="about-me">
-            <h3>About me</h3>
-            <h2>I am a Passionate Web Designer</h2>
-            <p>Obviously I am a Web Designer. Web Developer with over 7 years of the best experience. Experienced with
-                all stages of the development cycle for ourself dynamic web projects. The as opposed to using Content
-                here, content here, making it look like readable English.</p>
-            <h2>Smart work</h2>
-            <p>A part of the team that has built the front-end for an enterprise-level web application in AngularJS.
-                I've been a part of a team that has built.</p>
-            <h2>Modern work</h2>
-            <p>I've worked with a wide range of technologies, including MS SQL Server and Python. One of my favorite
-                characteristics of an employer is their passion for the work they are doing.</p>
-        </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://www.dole.com/sites/default/files/media/2025-01/strawberries.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">STRAWBERRY</h5>
+        <p class="card-text">Sweet strawberries, ruby-red and bright,
+            A summertime favorite that’s pure delight.</p>
+      </div>
     </div>
-
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://www.dole.com/sites/default/files/media/2025-01/kiwi.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">KIWI</h5>
+        <p class="card-text">Bright green kiwi with tiny seeds inside,
+         A tangy, sweet fruit that’s hard to hide.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://rainierfruit.com/wp-content/uploads/2021/11/Rainier-Fruit-Cherries.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CHERRY</h5>
+        <p class="card-text">Glossy red cherries, juicy and small,
+          A perfect bite-sized delight for all.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
